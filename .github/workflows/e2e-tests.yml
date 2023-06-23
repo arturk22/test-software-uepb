@@ -30,7 +30,7 @@ jobs:
       - name: Copy Cypress tests
         run: |
           mkdir -p cypress
-          cp -R cypress/e2e cypress/
+          rsync -av --exclude='node_modules' cypress/e2e/ cypress/
 
       - name: Run E2E tests
         run: npm run e2e
