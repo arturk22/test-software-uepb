@@ -1,0 +1,6 @@
+Feature: Teste de Códigos de Status
+
+  Scenario: Verificar os códigos de status
+    Given que estou na página de códigos de status
+    When eu clico em cada link de código de status
+    Then eu vejo o código de status exibido corretamente
